@@ -16,11 +16,7 @@ const __dirname = path.dirname(__filename);
     { type: argName ? null : "text", name: "name", message: "Project name?", initial: "my-app" },
     { type: "select", name: "pm", message: "Package manager?", initial: 0,
       choices: [
-        { title: "npm", value: "npm" }, 
-        { title: "pnpm", value: "pnpm" }, 
-        { title: "yarn", value: "yarn" },
-        { title: "bun", value: "bun" },
-        { title: "deno", value: "deno" }
+        { title: "npm", value: "npm" }
       ] },
     { type: "select", name: "preset", message: "Template preset?", initial: 0,
       choices: [{ title: "default (Next+Hono+Turbo)", value: "templates" }] }

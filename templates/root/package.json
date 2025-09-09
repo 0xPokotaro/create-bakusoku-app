@@ -1,4 +1,13 @@
 {
   "name": "bakusoku-app",
-  "private": true
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd frontend && npm run dev\" \"cd backend && npm run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "9.2.1"
+  }
 }
